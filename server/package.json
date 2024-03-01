@@ -1,0 +1,13 @@
+{
+  "name": "ethiocraft_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server",
+    "client":" cd.. &&  npm start --prefix client",
+    "dev": "concurrently \"nodemon server \" \"npm run client \""
+    },
+  "author": "",
+  "license": "ISC"
+}
