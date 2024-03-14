@@ -5,6 +5,8 @@ import Login from './pages/login';
 import Signup from './pages/signup';
 import Landing from './pages/hero';
 import ThemeSwitcher from './pages/ThemeSwitcher';
+import Ecommerse from './pages/ecommerce/ecommerce';
+import Sell from './pages/ecommerce/sell.craft';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
     <Route path='/signup' element={<Signup/>}></Route>
     <Route path='/login' element={<Login/>}></Route>
     <Route path='/dark' element={<ThemeSwitcher/>}></Route>
+    <Route path='/ecommerse' element={<Ecommerse/>}></Route>
+    <Route path='/sell' element={<Sell/>}></Route>
 
       </Routes>
       </Router>
