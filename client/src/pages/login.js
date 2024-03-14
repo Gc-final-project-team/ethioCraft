@@ -1,54 +1,75 @@
 
 import React from "react"
 import ThemeSwitcher from "./ThemeSwitcher"
+import image4 from "../images/females.jpg"
 
 const Login = () => {
    
    return(
       
    
-      <body class="bg-gray-50 dark:bg-gray-900 h-screen">
+      <body class="bg-gray-50 dark:bg-gray-900 h-full">
          <ThemeSwitcher className=""/>
-       
-      <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-          <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
-              <img class="w-8 h-8 mr-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" alt="logo"></img>
-              Flowbite    
-          </a>
-          
-          <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
-              <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-                  <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-                      
-                  </h1>
-                  <form class="space-y-4 md:space-y-6" action="#">
-                      <div>
-                          <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-                          <input type="email"  class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required=""></input>
-                      </div>
-                      <div>
-                          <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-                          <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required=""></input>
-                      </div>
-                      <div class="flex items-center justify-between">
-                          <div class="flex items-start">
-                              <div class="flex items-center h-5">
-                                <input id="remember" aria-describedby="remember" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" required=""></input>
-                              </div>
-                              <div class="ml-3 text-sm">
-                                <label for="remember" class="text-gray-500 dark:text-gray-300">Remember me</label>
-                              </div>
-                          </div>
-                          <a href="#" class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">Forgot password?</a>
-                      </div>
-                      <button type="submit" class="w-full text-white bg-blue-900  hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign in</button>
-                      <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                          Don’t have an account yet? <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a>
-                      </p>
-                  </form>
-              </div>
-          </div>
+         <section class="flex flex-col md:flex-row h-screen dark:bg-gray-900  items-center">
+
+<div class="bg-white dark:bg-gray-900  hidden lg:block w-fit md:w-1/2 xl:w-fit h-screen">
+  <img src={image4} alt="" class="w-fit h-min object-cover pl-10 max-w-lg rounded-lg"></img>
+</div>
+
+<div class="bg-white dark:bg-gray-900 w-full md:max-w-md lg:max-w-full md:mx-auto md:mx-0 md:w-1/2 xl:w-1/3 h-screen px-6 lg:px-16 xl:px-12
+      flex items-center justify-center">
+
+  <div class="w-full h-100">
+
+    <h1 class="text-xl md:text-2xl  dark:text-white font-bold leading-tight mt-2">Log in to your account</h1>
+
+    <form class="mt-6" action="#" method="POST">
+      <div>
+        <label class="block text-gray-700 dark:text-white">Email Address</label>
+        <input type="email" name="" id="" placeholder="Enter Email Address" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none" autofocus autocomplete required></input>
       </div>
+
+      <div class="mt-4">
+        <label class="block text-gray-700 dark:text-white">Password</label>
+        <input type="password" name="" id="" placeholder="Enter Password" minlength="6" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500
+              focus:bg-white focus:outline-none" required></input>
+      </div>
+
+      <div class="text-right mt-2">
+        <a href="/" class="text-sm font-semibold text-gray-700 hover:text-blue-700 dark:text-white  focus:text-blue-700">Forgot Password?</a>
+      </div>
+
+      <button type="submit" class="w-full block bg-indigo-500 hover:bg-indigo-400 focus:bg-indigo-400 text-white font-semibold rounded-lg
+            px-4 py-3 mt-6">Log In</button>
+    </form>
+
+    <hr class="my-6 border-gray-300 w-full"></hr>
+
+    <div class="mt-5 grid space-y-4">
+                            <button
+                                class="group h-12 px-6 border-2 border-gray-300 rounded-full transition duration-300 hover:border-blue-400 focus:bg-blue-50 active:bg-blue-100">
+                                <div class="relative flex items-center space-x-4 justify-center">
+                                    <img src="https://www.svgrepo.com/show/475656/google-color.svg"
+                                        class="absolute left-0 w-5" alt="google logo"></img>
+                                    <span
+                                        class="block w-max font-semibold tracking-wide text-gray-700 dark:text-white text-sm transition duration-300 group-hover:text-blue-600 sm:text-base">Continue
+                                        with Google
+                                    </span>
+                                </div>
+                            </button>
+                          </div>
+                          
+                            
+    <p class="mt-3 dark:text-white">Need an account? <a href="/signup" class="text-blue-500 hover:text-blue-700 font-semibold">Create an
+            account</a></p>
+
+
+  </div>
+</div>
+
+</section>
+       
+    
     </body>
 
    )
