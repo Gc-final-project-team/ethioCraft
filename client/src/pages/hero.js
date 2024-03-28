@@ -154,12 +154,11 @@ const Landing = () => {
 
   
   <></>
-  <section className="bg-gray-50 dark:bg-gray-900">
-  
-  
-  <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
-    <div className="mx-auto max-w-xl text-center">
-      <h1 className="text-3xl dark:text-white font-extrabold sm:text-5xl">
+  <section class="text-gray-600 body-font bg-gray-50 dark:bg-slate-900">
+    <div class="container mx-auto flex md:px-24 md:py-10 md:flex-row flex-col items-center">
+        <div
+            class="lg:flex-grow mt-5 md:mt-0   md:w-1.5/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+               <h1 className="text-3xl text-black dark:text-white font-extrabold sm:text-5xl">
         Ethio Crafts platform
         <strong className="font-extrabold text-red-700  dark:text-yellow-300 sm:block"> All about crafts </strong>
       </h1>
@@ -168,7 +167,6 @@ const Landing = () => {
       Discover the vibrant world of Ethiopian crafts with Ethio carft, the ultimate web app designed to teach, connect, and empower craft enthusiasts like you. 
       
       </p>
-
       <div className="mt-8 flex flex-wrap justify-center gap-4">
         <a
           className="block w-full rounded bg-red-600 dark:bg-white dark:text-gray-900 px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
@@ -184,8 +182,17 @@ const Landing = () => {
           Learn More
         </a>
       </div>
+        </div>
+        <div class="lg:max-w-lg lg:w-full mb-5 md:mb-0 md:w-1/2 w-3/6">
+            <img class="object-cover object-center rounded" alt="hero" src="https://www.svgrepo.com/show/490900/hot-air-balloon.svg"></img>
+        </div>
     </div>
-  </div>
+</section>
+  
+  <section className="bg-gray-50 dark:bg-gray-900">
+ 
+  
+
 
 <section id="services">
   <h1 className=" py-20 text-center text-2xl dark:text-white font-bold sm:text-lg">
